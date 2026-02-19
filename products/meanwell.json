@@ -14,7 +14,7 @@
         "menu_drop1": {
           "name": "LRS Series Power Supply",
           "description": "The Mean Well LRS Series is a compact, low-profile enclosed power supply designed for control panels, automation machines, and general industrial equipment. It offers excellent efficiency, stable DC output, and built-in safety protections while occupying minimal panel space. These power supplies are widely used in PLC panels, CNC machines, 3D printers, and conveyor systems where reliability and compact design are essential.",
-          "image": "https://www.meanwell.com/Upload/Pictures/Power-Supply-LRS-350.jpg",
+          "image": "/images/lrs.png",
           "badge": "COMPACT INDUSTRIAL",
           "specs": [
             "Power range: 35W to 600W",
@@ -28,7 +28,7 @@
         "menu_drop2": {
           "name": "NDR Series DIN Rail SMPS",
           "description": "The NDR Series is a DIN rail mounted power supply specifically designed for industrial automation control panels. It provides stable 24V DC output with high efficiency and excellent resistance to electrical noise and surges. These units are ideal for powering PLCs, sensors, relays, HMIs, and automation systems where clean and reliable power is critical for continuous operation.",
-          "image": "https://www.meanwell.com/Upload/Pictures/Power-Supply-NDR-120.jpg",
+          "image": "/image/ndr.png",
           "badge": "DIN RAIL TYPE",
           "specs": [
             "DIN rail mounting design",
@@ -42,7 +42,7 @@
         "menu_drop3": {
           "name": "MDR Series DIN Rail Power Supply",
           "description": "The MDR Series offers ultra-slim DIN rail power supplies suitable for space-constrained control panels and compact automation systems. Despite their small size, these units provide stable power output, high reliability, and excellent thermal performance. They are commonly used in machine automation, building control systems, and electrical cabinets where efficient space utilization is essential.",
-          "image": "https://www.meanwell.com/Upload/Pictures/Power-Supply-MDR-60.jpg",
+          "image": "/images/mdr.png",
           "badge": "SLIM DESIGN",
           "specs": [
             "Slim profile DIN rail mounting",
@@ -56,7 +56,7 @@
         "menu_drop4": {
           "name": "5V DC Power Supply",
           "description": "Mean Well 5V SMPS units are designed for low-voltage electronic devices, controllers, communication modules, and embedded systems requiring stable and noise-free power. These power supplies deliver precise voltage regulation, long-term reliability, and built-in protection features to ensure sensitive electronics operate safely under industrial conditions.",
-          "image": "https://www.meanwell.com/Upload/Pictures/Power-Supply-5V-SMPS.jpg",
+          "image": "/images/dc.png",
           "badge": "LOW VOLTAGE",
           "specs": [
             "Stable regulated 5V DC output",
@@ -70,7 +70,7 @@
         "menu_drop5": {
           "name": "12V DC Power Supply",
           "description": "Mean Well 12V power supplies are widely used for industrial control circuits, LED systems, motors, automation sensors, and security equipment. They provide stable voltage output with strong load regulation and excellent protection against power surges. Their rugged construction ensures dependable performance even in continuous industrial operation environments.",
-          "image": "https://www.meanwell.com/Upload/Pictures/Power-Supply-12V-SMPS.jpg",
+          "image": "/images/dcv.png",
           "badge": "INDUSTRIAL VOLTAGE",
           "specs": [
             "Stable 12V DC regulated output",
