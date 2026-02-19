@@ -431,7 +431,98 @@
       ]
     }
   }
-}
+},
+
+  "main_menu11": {
+    "title": "OMRON PLC SOLUTIONS",
+    "description": "Omron PLC systems deliver reliable and high-speed control for industrial automation applications. Designed for flexibility and scalability, they are widely used in manufacturing, process control, and machine automation.",
+    "features": [
+      "High-speed processing",
+      "Modular expansion capability",
+      "Reliable industrial performance",
+      "Easy programming and integration",
+      "Advanced communication support"
+    ],
+    "models": {
+      "menu_drop11_1": {
+        "name": "CP1E PLC",
+        "description": "The CP1E is a compact and cost-effective PLC designed for small automation systems with reliable control performance.",
+        "image": "/images/cp1e.png",
+        "badge": "COMPACT CONTROL",
+        "specs": [
+          "Built-in I/O",
+          "High-speed counter support",
+          "Compact size design",
+          "Cost-effective solution"
+        ]
+      },
+      "menu_drop11_2": {
+        "name": "CP2E PLC",
+        "description": "The CP2E offers enhanced connectivity with built-in Ethernet and improved data handling for smart automation systems.",
+        "image": "/images/cp2e.png",
+        "badge": "SMART AUTOMATION",
+        "specs": [
+          "Built-in Ethernet",
+          "Improved memory capacity",
+          "Advanced communication protocols",
+          "Flexible expansion options"
+        ]
+      },
+      "menu_drop11_3": {
+        "name": "CJ1M PLC",
+        "description": "The CJ1M is a modular PLC designed for medium-scale automation with flexible configuration and high processing speed.",
+        "image": "/images/cj1m.png",
+        "badge": "MODULAR SYSTEM",
+        "specs": [
+          "Modular CPU design",
+          "Expandable I/O modules",
+          "Fast program execution",
+          "Reliable network support"
+        ]
+      },
+      "menu_drop11_4": {
+        "name": "CJ2M PLC",
+        "description": "The CJ2M provides high-performance control with advanced networking, motion control, and data processing capabilities.",
+        "image": "/images/cj2m.png",
+        "badge": "HIGH PERFORMANCE",
+        "specs": [
+          "High-speed processing",
+          "Advanced motion control",
+          "Large memory capacity",
+          "Multiple communication ports"
+        ]
+      }
+    }
+  },
+
+  "main_menu12": {
+    "title": "OMRON HMI SOLUTIONS",
+    "description": "Omron HMI panels provide intuitive visualization and control for industrial automation systems. Designed for durability and ease of use, they enhance operator efficiency and system monitoring.",
+    "features": [
+      "User-friendly touch interface",
+      "High-resolution display",
+      "Reliable industrial design",
+      "Easy PLC integration",
+      "Flexible communication options"
+    ],
+    "models": {
+      "menu_drop12_1": {
+        "name": "NB7 HMI",
+        "description": "The NB7 is a high-performance touch screen HMI designed for real-time monitoring and control of industrial automation systems.",
+        "image": "/images/nb7.png",
+        "badge": "TOUCH INTERFACE",
+        "specs": [
+          "7-inch TFT display",
+          "High-resolution screen",
+          "Multiple communication ports",
+          "Compact panel mount design"
+        ]
+      }
+    }
+  }
+
+
+
 
 
 
