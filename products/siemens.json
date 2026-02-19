@@ -172,7 +172,7 @@
             "menu_drop3_1": {
                 "name": "SINAMICS V20",
                 "description": "Basic general-purpose inverter for simple speed control.",
-                "image": "https://images.unsplash.com/photo-1581093458791-9d42e3c7e23e?w=400&h=300&fit=crop",
+                "image": "/images/SINAMICS.png",
                 "badge": "BASIC DRIVE",
                 "specs": [
                     "Power Range: 0.12 kW to 30 kW",

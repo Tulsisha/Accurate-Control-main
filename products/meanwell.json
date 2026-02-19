@@ -28,7 +28,7 @@
         "menu_drop2": {
           "name": "NDR Series DIN Rail SMPS",
           "description": "The NDR Series is a DIN rail mounted power supply specifically designed for industrial automation control panels. It provides stable 24V DC output with high efficiency and excellent resistance to electrical noise and surges. These units are ideal for powering PLCs, sensors, relays, HMIs, and automation systems where clean and reliable power is critical for continuous operation.",
-          "image": "/image/ndr.png",
+          "image": "/images/ndr.png",
           "badge": "DIN RAIL TYPE",
           "specs": [
             "DIN rail mounting design",

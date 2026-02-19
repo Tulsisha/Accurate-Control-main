@@ -14,7 +14,7 @@
         "menu_drop1": {
           "name": "5 Port Industrial Ethernet Switch",
           "description": "The Phoenix 5 Port Ethernet Switch is designed for compact automation cells and small industrial networks requiring stable and uninterrupted communication. It provides reliable data exchange between PLCs, HMIs, drives, and industrial devices. With plug-and-play functionality and rugged housing, it ensures long-term operation in control cabinets and machine installations.",
-          "image": "https://www.phoenixcontact.com/assets/images/industrial-ethernet-switch-5-port.jpg",
+          "image": "/images/poer5.png",
           "badge": "COMPACT SWITCH",
           "specs": [
             "5 RJ45 Ethernet ports",
@@ -27,7 +27,7 @@
         "menu_drop2": {
           "name": "8 Port Industrial Ethernet Switch",
           "description": "The 8 Port Phoenix Ethernet Switch is suitable for medium-sized automation systems where multiple devices need stable network connectivity. It supports high-speed industrial communication, enabling seamless integration of PLCs, sensors, and distributed I/O systems. Its durable construction ensures reliable performance in harsh industrial conditions.",
-          "image": "https://www.phoenixcontact.com/assets/images/industrial-ethernet-switch-8-port.jpg",
+          "image": "/images/poer8.png",
           "badge": "MEDIUM NETWORK",
           "specs": [
             "8 Ethernet ports",
@@ -40,7 +40,7 @@
         "menu_drop3": {
           "name": "16 Port Industrial Ethernet Switch",
           "description": "The 16 Port Phoenix Ethernet Switch is designed for large-scale industrial networks requiring high device connectivity and stable data exchange. It is widely used in plant automation, process industries, and infrastructure projects. Advanced network reliability and rugged hardware ensure continuous system performance with minimal downtime.",
-          "image": "https://www.phoenixcontact.com/assets/images/industrial-ethernet-switch-16-port.jpg",
+          "image": "/images/poer16.png",
           "badge": "HIGH CAPACITY",
           "specs": [
             "16 high-speed Ethernet ports",
@@ -67,7 +67,7 @@
         "menu_drop2_1": {
           "name": "5 Port Slim Relay Module",
           "description": "The 5 Channel Slim Relay Module from Phoenix Contact is ideal for compact control panels where space efficiency is critical. It ensures safe switching between control and load circuits while maintaining signal clarity and long-term operational stability.",
-          "image": "https://www.phoenixcontact.com/assets/images/slim-relay-module.jpg",
+          "image": "/images/poer16.png",
           "badge": "SPACE SAVING",
           "specs": [
             "5 relay outputs",
@@ -79,7 +79,7 @@
         "menu_drop2_2": {
           "name": "8 Port Slim Relay Module",
           "description": "The 8 Channel Slim Relay Module supports higher switching density while maintaining compact installation. It is widely used in PLC interface panels, machine automation, and signal distribution systems.",
-          "image": "https://www.phoenixcontact.com/assets/images/slim-relay-8-channel.jpg",
+          "image": "/images/slim8.png",
           "badge": "HIGH DENSITY",
           "specs": [
             "8 independent relay channels",
@@ -91,7 +91,7 @@
         "menu_drop2_3": {
           "name": "16 Port Slim Relay Module",
           "description": "The 16 Channel Slim Relay Module is designed for high-output automation systems requiring multiple relay controls within limited cabinet space. It ensures stable switching performance and electrical isolation in industrial applications.",
-          "image": "https://www.phoenixcontact.com/assets/images/slim-relay-16-channel.jpg",
+          "image": "/images/slim16.jpg",
           "badge": "MAX CONTROL",
           "specs": [
             "16 compact relay outputs",
@@ -117,7 +117,7 @@
         "menu_drop3_1": {
           "name": "5 Channel Relay Board",
           "description": "The 5 Channel Relay Board is designed for small automation applications requiring dependable switching of multiple electrical loads. Its organized terminal layout and durable components ensure smooth operation in industrial panels.",
-          "image": "https://www.phoenixcontact.com/assets/images/relay-board-5-channel.jpg",
+          "image": "/images/channel5.png",
           "badge": "COMPACT BOARD",
           "specs": [
             "5 relay outputs",
@@ -129,7 +129,7 @@
         "menu_drop3_2": {
           "name": "8 Channel Relay Board",
           "description": "The 8 Channel Relay Board supports medium-level automation systems requiring reliable signal control and load switching. It ensures safe electrical separation and stable performance under industrial conditions.",
-          "image": "https://www.phoenixcontact.com/assets/images/relay-board-8-channel.jpg",
+          "image": "/images/chanel8.jpg",
           "badge": "MEDIUM LOAD",
           "specs": [
             "8 independent relay outputs",
@@ -141,7 +141,7 @@
         "menu_drop3_3": {
           "name": "16 Channel Relay Board",
           "description": "The 16 Channel Relay Board is ideal for large-scale industrial automation systems requiring multiple output controls in a single compact module. It provides reliable switching, enhanced protection, and long operational durability for demanding industrial applications.",
-          "image": "https://www.phoenixcontact.com/assets/images/relay-board-16-channel.jpg",
+          "image": "/images/chnel16.jpg",
           "badge": "HIGH OUTPUT",
           "specs": [
             "16 output channels",
