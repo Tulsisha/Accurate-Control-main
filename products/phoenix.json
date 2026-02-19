@@ -1,0 +1,156 @@
+{
+    "main_menu": {
+      "title": "PHOENIX CONTACT INDUSTRIAL ETHERNET SWITCHES",
+      "description": "Phoenix Contact industrial Ethernet switches are engineered to deliver reliable and secure network communication in demanding industrial environments. Designed for automation systems, manufacturing plants, and infrastructure networks, these switches ensure stable data transmission even under vibration, temperature fluctuations, and electrical noise. With rugged metal housings and industrial-grade components, they support high network uptime and efficient industrial communication architecture.",
+      "features": [
+        "Industrial-grade metal housing",
+        "High-speed data transmission",
+        "DIN rail mounting design",
+        "Wide operating temperature range",
+        "Network redundancy support",
+        "Secure and stable communication"
+      ],
+      "models": {
+        "menu_drop1": {
+          "name": "5 Port Industrial Ethernet Switch",
+          "description": "The Phoenix 5 Port Ethernet Switch is designed for compact automation cells and small industrial networks requiring stable and uninterrupted communication. It provides reliable data exchange between PLCs, HMIs, drives, and industrial devices. With plug-and-play functionality and rugged housing, it ensures long-term operation in control cabinets and machine installations.",
+          "image": "https://www.phoenixcontact.com/assets/images/industrial-ethernet-switch-5-port.jpg",
+          "badge": "COMPACT SWITCH",
+          "specs": [
+            "5 RJ45 Ethernet ports",
+            "10/100 Mbps communication",
+            "DIN rail mountable",
+            "Industrial temperature tolerance",
+            "Low power consumption"
+          ]
+        },
+        "menu_drop2": {
+          "name": "8 Port Industrial Ethernet Switch",
+          "description": "The 8 Port Phoenix Ethernet Switch is suitable for medium-sized automation systems where multiple devices need stable network connectivity. It supports high-speed industrial communication, enabling seamless integration of PLCs, sensors, and distributed I/O systems. Its durable construction ensures reliable performance in harsh industrial conditions.",
+          "image": "https://www.phoenixcontact.com/assets/images/industrial-ethernet-switch-8-port.jpg",
+          "badge": "MEDIUM NETWORK",
+          "specs": [
+            "8 Ethernet ports",
+            "Robust metal enclosure",
+            "Reliable signal transmission",
+            "Industrial surge protection",
+            "Panel-friendly compact design"
+          ]
+        },
+        "menu_drop3": {
+          "name": "16 Port Industrial Ethernet Switch",
+          "description": "The 16 Port Phoenix Ethernet Switch is designed for large-scale industrial networks requiring high device connectivity and stable data exchange. It is widely used in plant automation, process industries, and infrastructure projects. Advanced network reliability and rugged hardware ensure continuous system performance with minimal downtime.",
+          "image": "https://www.phoenixcontact.com/assets/images/industrial-ethernet-switch-16-port.jpg",
+          "badge": "HIGH CAPACITY",
+          "specs": [
+            "16 high-speed Ethernet ports",
+            "Optimized network redundancy",
+            "Industrial EMI protection",
+            "Extended temperature operation",
+            "Long operational lifespan"
+          ]
+        }
+      }
+    },
+  
+    "main_menu2": {
+      "title": "PHOENIX CONTACT SLIM RELAY MODULES",
+      "description": "Phoenix Contact slim relay modules are designed for space-saving signal switching and interface applications in industrial control panels. Their compact design allows high-density installation without compromising reliability. These modules provide electrical isolation, fast switching, and dependable long-term operation in automation and process control environments.",
+      "features": [
+        "Ultra slim 6mm design",
+        "DIN rail mounting",
+        "Reliable signal isolation",
+        "LED status indication",
+        "High switching durability"
+      ],
+      "models": {
+        "menu_drop2_1": {
+          "name": "5 Port Slim Relay Module",
+          "description": "The 5 Channel Slim Relay Module from Phoenix Contact is ideal for compact control panels where space efficiency is critical. It ensures safe switching between control and load circuits while maintaining signal clarity and long-term operational stability.",
+          "image": "https://www.phoenixcontact.com/assets/images/slim-relay-module.jpg",
+          "badge": "SPACE SAVING",
+          "specs": [
+            "5 relay outputs",
+            "Slim 6mm housing",
+            "Quick wiring terminals",
+            "Industrial reliability"
+          ]
+        },
+        "menu_drop2_2": {
+          "name": "8 Port Slim Relay Module",
+          "description": "The 8 Channel Slim Relay Module supports higher switching density while maintaining compact installation. It is widely used in PLC interface panels, machine automation, and signal distribution systems.",
+          "image": "https://www.phoenixcontact.com/assets/images/slim-relay-8-channel.jpg",
+          "badge": "HIGH DENSITY",
+          "specs": [
+            "8 independent relay channels",
+            "Low coil power consumption",
+            "Durable switching contacts",
+            "Long service life"
+          ]
+        },
+        "menu_drop2_3": {
+          "name": "16 Port Slim Relay Module",
+          "description": "The 16 Channel Slim Relay Module is designed for high-output automation systems requiring multiple relay controls within limited cabinet space. It ensures stable switching performance and electrical isolation in industrial applications.",
+          "image": "https://www.phoenixcontact.com/assets/images/slim-relay-16-channel.jpg",
+          "badge": "MAX CONTROL",
+          "specs": [
+            "16 compact relay outputs",
+            "DIN rail mountable",
+            "High mechanical durability",
+            "Stable long-term performance"
+          ]
+        }
+      }
+    },
+  
+    "main_menu3": {
+      "title": "PHOENIX CONTACT RELAY BOARD SOLUTIONS",
+      "description": "Phoenix Contact relay boards are engineered for organized and reliable load switching in industrial control cabinets. These boards provide strong electrical isolation, simplified wiring layout, and enhanced safety in automation systems. They are widely used in PLC output expansion, motor control circuits, and automation interface systems.",
+      "features": [
+        "Multiple relay output configuration",
+        "Clear LED channel indicators",
+        "Industrial-grade PCB design",
+        "Strong electrical isolation",
+        "Efficient panel integration"
+      ],
+      "models": {
+        "menu_drop3_1": {
+          "name": "5 Channel Relay Board",
+          "description": "The 5 Channel Relay Board is designed for small automation applications requiring dependable switching of multiple electrical loads. Its organized terminal layout and durable components ensure smooth operation in industrial panels.",
+          "image": "https://www.phoenixcontact.com/assets/images/relay-board-5-channel.jpg",
+          "badge": "COMPACT BOARD",
+          "specs": [
+            "5 relay outputs",
+            "LED status indicators",
+            "Supports AC/DC loads",
+            "Panel mountable design"
+          ]
+        },
+        "menu_drop3_2": {
+          "name": "8 Channel Relay Board",
+          "description": "The 8 Channel Relay Board supports medium-level automation systems requiring reliable signal control and load switching. It ensures safe electrical separation and stable performance under industrial conditions.",
+          "image": "https://www.phoenixcontact.com/assets/images/relay-board-8-channel.jpg",
+          "badge": "MEDIUM LOAD",
+          "specs": [
+            "8 independent relay outputs",
+            "Optical isolation",
+            "High current switching",
+            "Durable PCB structure"
+          ]
+        },
+        "menu_drop3_3": {
+          "name": "16 Channel Relay Board",
+          "description": "The 16 Channel Relay Board is ideal for large-scale industrial automation systems requiring multiple output controls in a single compact module. It provides reliable switching, enhanced protection, and long operational durability for demanding industrial applications.",
+          "image": "https://www.phoenixcontact.com/assets/images/relay-board-16-channel.jpg",
+          "badge": "HIGH OUTPUT",
+          "specs": [
+            "16 output channels",
+            "Industrial-grade relay contacts",
+            "Stable long-term switching",
+            "Efficient panel integration"
+          ]
+        }
+      }
+    }
+  }
+  

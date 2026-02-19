@@ -1,0 +1,86 @@
+{
+    "main_menu": {
+      "title": "UL INDUSTRIAL RELAY BOARD SOLUTIONS",
+      "description": "UL relay boards are designed for reliable signal switching and load control in industrial automation systems, control panels, and machine interfaces. These boards provide safe electrical isolation between control circuits and high-power loads, ensuring stable system operation and equipment protection. Their rugged construction, organized terminal layout, and industrial-grade components make them ideal for PLC interfacing, motor control circuits, and automated machinery applications.",
+      "features": [
+        "High reliability relay switching performance",
+        "Optical and electrical isolation for safety",
+        "Compact panel mounting design",
+        "Clear LED status indicators for diagnostics",
+        "Long mechanical and electrical life",
+        "Designed for continuous industrial operation"
+      ],
+      "models": {
+        "menu_drop1": {
+          "name": "8 Channel Relay Board",
+          "description": "The UL 8 Channel Relay Board is engineered to control multiple electrical loads simultaneously while maintaining strong isolation between control and power circuits. It is widely used in PLC control panels, automation systems, and industrial machines for switching motors, solenoids, lamps, and other electrical equipment. Its compact design, integrated protection circuits, and clear status LEDs ensure easy monitoring and long-term reliable operation in harsh environments.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/8_channel_relay_module.jpg",
+          "badge": "MULTI CONTROL",
+          "specs": [
+            "8 independent relay outputs",
+            "Opto-isolated input control",
+            "Supports AC and DC loads",
+            "LED channel indicators",
+            "Panel or DIN rail mountable"
+          ]
+        },
+  
+        "menu_drop2": {
+          "name": "16 Channel Relay Board",
+          "description": "The UL 16 Channel Relay Board offers high-density switching capability for complex automation systems requiring multiple output controls in a single module. It is commonly deployed in large PLC cabinets, industrial automation lines, and machine control systems to manage various electrical loads efficiently. With robust isolation, strong relay contacts, and organized wiring terminals, it ensures safe, stable, and long-term industrial operation.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/16_channel_relay_module.jpg",
+          "badge": "HIGH DENSITY",
+          "specs": [
+            "16 relay output channels",
+            "High current switching capability",
+            "Electrical isolation protection",
+            "Compact industrial PCB design",
+            "Reliable long life relays"
+          ]
+        }
+      }
+    },
+  
+    "main_menu2": {
+      "title": "UL REDUNDANCY MODULE SOLUTIONS",
+      "description": "UL redundancy modules ensure uninterrupted power supply to critical automation systems by managing dual power sources with intelligent load sharing and failover switching. These modules are essential in applications where downtime is unacceptable, such as industrial control systems, manufacturing plants, and infrastructure automation. They automatically switch power sources during failures while maintaining stable voltage output to connected equipment.",
+      "features": [
+        "Automatic power source switching",
+        "Load sharing between dual power supplies",
+        "Overload and short-circuit protection",
+        "LED status monitoring",
+        "Enhanced system reliability",
+        "Designed for mission-critical automation"
+      ],
+      "models": {
+        "menu_drop2_1": {
+          "name": "8 Channel Redundancy Module",
+          "description": "The UL 8 Channel Redundancy Module is built to manage multiple power outputs while maintaining uninterrupted supply through intelligent power source monitoring. It ensures continuous operation of PLC systems, sensors, and automation equipment even during power supply failure. Its industrial-grade construction and real-time fault detection make it ideal for critical automation installations requiring high reliability.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/power_redundancy_module.jpg",
+          "badge": "POWER BACKUP",
+          "specs": [
+            "Supports dual power input",
+            "Automatic failover switching",
+            "Multiple protected output channels",
+            "Fault detection indicators",
+            "Industrial rugged design"
+          ]
+        },
+  
+        "menu_drop2_2": {
+          "name": "16 Channel Redundancy Module",
+          "description": "The UL 16 Channel Redundancy Module is designed for large-scale automation systems where multiple devices require continuous power availability. It offers enhanced load distribution, rapid source switching, and advanced protection mechanisms to safeguard sensitive industrial equipment. This module is widely used in complex control panels and process automation systems for maximum system uptime.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/redundancy_power_module.jpg",
+          "badge": "MAX RELIABILITY",
+          "specs": [
+            "16 output channel support",
+            "High current capacity",
+            "Fast automatic source switching",
+            "Overload and surge protection",
+            "Long service life design"
+          ]
+        }
+      }
+    }
+  }
+  

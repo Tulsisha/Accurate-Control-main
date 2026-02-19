@@ -1,0 +1,438 @@
+{
+  "main_menu": {
+    "title": "OMRON PROXIMITY SENSOR SOLUTIONS",
+    "description": "Omron proximity sensors are engineered for reliable non-contact detection in demanding industrial environments, providing precise sensing of metallic and non-metallic objects. These sensors are widely used in automation lines, packaging systems, and material handling applications where durability, accuracy, and consistent performance are critical. Their rugged construction ensures long service life even under vibration, dust, oil, and moisture exposure.",
+    "features": [
+      "High sensing accuracy with stable output",
+      "Robust metal housings for industrial use",
+      "Wide voltage range compatibility",
+      "Fast switching response for high-speed automation",
+      "Superior resistance to electrical noise",
+      "Long operational life with minimal maintenance"
+    ],
+    "models": {
+      "menu_drop1": {
+        "name": "E2B Series",
+        "description": "The Omron E2B Series inductive proximity sensors are designed for dependable metal object detection in harsh factory conditions. They feature strong mechanical durability, excellent noise immunity, and long sensing distances, making them ideal for conveyor systems, machine tools, and automated production equipment. Their compact cylindrical design allows easy installation even in space-limited control panels while ensuring consistent long-term performance.",
+        "image": "/images/e2b.png",
+        "badge": "INDUSTRIAL GRADE",
+        "specs": [
+          "Sensing distance up to 15 mm",
+          "M8, M12, M18, M30 housing options",
+          "PNP and NPN output variants",
+          "IP67 protection rating",
+          "High resistance to vibration and impact"
+        ]
+      },
+      "menu_drop2": {
+        "name": "E2A Series",
+        "description": "The E2A Series offers a cost-effective sensing solution without compromising reliability or performance. These proximity sensors provide stable detection in standard automation environments and are widely used in packaging machines, assembly lines, and automated sorting systems. Their simple wiring design and LED operation indicators allow quick installation and easy troubleshooting for maintenance teams.",
+        "image": "/images/e2a.png",
+        "badge": "ECONOMY SERIES",
+        "specs": [
+          "Compact body structure",
+          "Short-circuit and reverse polarity protection",
+          "Clear LED status indicator",
+          "Long service life design"
+        ]
+      },
+      "menu_drop3": {
+        "name": "Inductive Sensors",
+        "description": "Omron inductive sensors provide highly accurate metal detection with extended sensing ranges and superior reliability in demanding industrial processes. They are specifically designed to operate consistently in high-speed automation environments where precise object positioning is essential. Their durable design ensures stable performance even in the presence of oil mist, dust, vibration, and temperature fluctuations.",
+        "image": "/images/indussensor.png",
+        "badge": "PRECISION SENSING",
+        "specs": [
+          "Shielded and non-shielded versions",
+          "High-frequency switching capability",
+          "Extended detection range",
+          "Excellent temperature stability"
+        ]
+      },
+      "menu_drop4": {
+        "name": "Capacitive Sensors",
+        "description": "Omron capacitive proximity sensors are capable of detecting a wide variety of materials including plastic, glass, powders, liquids, and granules. These sensors are commonly used in level detection applications such as tanks, silos, and hoppers, as well as packaging machinery. Their adjustable sensitivity allows fine-tuning for reliable operation across different material types and environmental conditions.",
+        "image": "/images/compact.png",
+        "badge": "MULTI MATERIAL",
+        "specs": [
+          "Detects both metallic and non-metallic objects",
+          "Sensitivity adjustment control",
+          "Stable detection through container walls",
+          "High environmental resistance"
+        ]
+      },
+      "menu_drop5": {
+        "name": "Pre Wired Sensors",
+        "description": "Pre-wired proximity sensors from Omron are designed to simplify installation and reduce wiring time in industrial automation systems. These sensors come with factory-attached cables that ensure secure connections and minimize field wiring errors. They are ideal for fast deployment in conveyor systems, assembly machines, and production lines requiring quick sensor replacement.",
+        "image": "/images/pree.png",
+        "badge": "QUICK INSTALL",
+        "specs": [
+          "Factory-attached durable cable",
+          "Improved resistance to mechanical stress",
+          "Fast installation with reduced downtime"
+        ]
+      },
+      "menu_drop6": {
+        "name": "M12 Connector Type",
+        "description": "Omron M12 connector type proximity sensors provide flexible wiring and fast maintenance through standardized industrial connectors. These sensors are particularly suitable for modular automation systems where frequent replacement or reconfiguration is required. The secure locking mechanism ensures stable signal transmission even under vibration-heavy industrial conditions.",
+        "image": "/images/m12.png",
+        "badge": "MODULAR",
+        "specs": [
+          "Standard M12 industrial connector",
+          "Quick plug-and-play replacement",
+          "High vibration resistance",
+          "Reliable signal transmission"
+        ]
+      }
+    }
+  },  
+  "main_menu2": {
+      "title": "OMRON PHOTO SENSOR SOLUTIONS",
+      "description": "Omron photoelectric sensors are engineered for high-precision non-contact detection in modern industrial automation systems. Designed to operate reliably in challenging environments, these sensors ensure accurate object detection across conveyor lines, packaging machinery, assembly systems, and material handling applications. With advanced optical technology and robust construction, they deliver consistent performance even under dust, vibration, and ambient light interference.",
+      "features": [
+        "High-speed optical detection",
+        "Reliable performance in harsh environments",
+        "Compact and industrial-grade housing",
+        "Wide sensing distance options",
+        "Stable operation under vibration and dust",
+        "Low maintenance with long operational life"
+      ],
+      "models": {
+        "menu_drop2_1": {
+          "name": "Diffuse Photo Sensors",
+          "description": "Diffuse photoelectric sensors detect objects by emitting light and receiving reflection directly from the target surface. These sensors are ideal for short-range detection and compact automation systems where space efficiency and ease of installation are important. They provide reliable performance without requiring an external reflector.",
+          "image": "/images/deffuse.png",
+          "badge": "COMPACT DETECTION",
+          "specs": [
+            "Built-in transmitter and receiver",
+            "No reflector required",
+            "Short to medium sensing range",
+            "Easy installation and alignment",
+            "Ideal for packaging and conveyor systems"
+          ]
+        },
+        "menu_drop2_2": {
+          "name": "Retroreflective Photo Sensors",
+          "description": "Retroreflective sensors use a reflector to return emitted light back to the receiver. When an object interrupts the beam, detection occurs. These sensors offer longer sensing distances than diffuse types and are suitable for industrial conveyor systems and automated production lines.",
+          "image": "/images/retro.png",
+          "badge": "LONG RANGE",
+          "specs": [
+            "Requires external reflector",
+            "Extended sensing range",
+            "High detection reliability",
+            "Polarized models for transparent objects",
+            "Stable operation in dusty environments"
+          ]
+        },
+        "menu_drop2_3": {
+          "name": "Through Beam Photo Sensors",
+          "description": "Through beam sensors consist of separate transmitter and receiver units placed opposite each other. They provide the highest sensing range and detection reliability among photoelectric sensors, making them ideal for heavy-duty industrial automation applications.",
+          "image": "/images/throughbeam.png",
+          "badge": "HIGH PRECISION",
+          "specs": [
+            "Separate transmitter and receiver",
+            "Longest sensing distance",
+            "Highly accurate object detection",
+            "Ideal for harsh industrial environments",
+            "Immune to surface reflectivity issues"
+          ]
+        }
+      }
+    
+  },
+  "main_menu3": {
+  "title": "OMRON RELAY SOLUTIONS",
+  "description": "Omron industrial relays are designed for reliable switching and control applications across automation systems, machinery panels, and electrical control circuits. Known for durability, stable contact performance, and long service life, these relays ensure dependable operation in demanding industrial environments.",
+  "features": [
+    "High electrical endurance",
+    "Stable contact performance",
+    "Compact industrial design",
+    "Wide coil voltage options",
+    "Clear LED and mechanical indicators",
+    "Long operational life"
+  ],
+  "models": {
+    "menu_drop3_1": {
+      "name": "MY2N Relay",
+      "description": "The MY2N is a general-purpose 2-pole relay designed for control panels and industrial automation systems. It offers reliable switching performance with clear LED indicators for easy status monitoring.",
+      "image": "/images/my2n.png",
+      "badge": "GENERAL PURPOSE",
+      "specs": [
+        "DPDT (2 Pole) configuration",
+        "LED operation indicator",
+        "Plug-in socket type",
+        "High durability contacts"
+      ]
+    },
+    "menu_drop3_2": {
+      "name": "MY4N Relay",
+      "description": "The MY4N relay provides 4-pole switching capability for advanced control applications. It is widely used in automation panels requiring multiple switching outputs.",
+      "image": "/images/my4n.png",
+      "badge": "MULTI CONTACT",
+      "specs": [
+        "4PDT (4 Pole) configuration",
+        "Transparent protective cover",
+        "LED indicator option",
+        "Long electrical life"
+      ]
+    },
+    "menu_drop3_3": {
+      "name": "LY2N Relay",
+      "description": "The LY2N relay is a heavy-duty industrial relay suitable for high-load applications. Its robust construction ensures reliable performance in demanding industrial conditions.",
+      "image": "/images/ly2n.png",
+      "badge": "HEAVY DUTY",
+      "specs": [
+        "DPDT configuration",
+        "High switching capacity",
+        "Mechanical operation indicator",
+        "Industrial-grade durability"
+      ]
+    },
+    "menu_drop3_4": {
+      "name": "LY4N Relay",
+      "description": "The LY4N offers four-pole switching with high current capacity, making it ideal for complex control circuits and automation systems.",
+      "image": "/images/ly4n.png",
+      "badge": "HIGH CAPACITY",
+      "specs": [
+        "4PDT configuration",
+        "High current switching",
+        "Reliable contact structure",
+        "Long mechanical life"
+      ]
+    },
+    "menu_drop3_5": {
+      "name": "G2RV Slim Relay",
+      "description": "The G2RV slim relay is designed for space-saving panel installations. Its compact design makes it ideal for high-density control cabinets while maintaining reliable switching performance.",
+      "image": "/images/g2rv.png",
+      "badge": "SLIM DESIGN",
+      "specs": [
+        "Ultra-slim body",
+        "DIN rail mounting",
+        "Quick wiring terminals",
+        "Space-saving panel solution"
+      ]
+    }
+  }
+},
+"main_menu4": {
+  "title": "OMRON LIMIT SWITCH SOLUTIONS",
+  "description": "Omron limit switches are designed for accurate position detection and mechanical motion control in industrial automation systems. Built with rugged metal housings and high durability contacts, these switches ensure reliable operation in harsh factory environments including vibration, dust, and oil exposure.",
+  "features": [
+    "High mechanical durability",
+    "Rugged industrial construction",
+    "Accurate position detection",
+    "Wide actuator variations available",
+    "Oil and dust resistant design",
+    "Long electrical life"
+  ],
+  "models": {
+    "menu_drop4_1": {
+      "name": "WLDA2 Limit Switch",
+      "description": "The WLDA2 is a heavy-duty industrial limit switch suitable for machine tools, conveyors, and automated systems. It provides reliable mechanical position sensing with strong resistance to vibration and impact.",
+      "image": "/images/wlda2.png",
+      "badge": "HEAVY DUTY",
+      "specs": [
+        "High mechanical life expectancy",
+        "Compact metal housing",
+        "Precise snap-action mechanism",
+        "IP rated protection",
+        "Ideal for industrial automation"
+      ]
+    }
+  }
+},
+
+"main_menu5": {
+  "title": "OMRON SAFETY CURTAIN SOLUTIONS",
+  "description": "Omron safety light curtains provide advanced machine safety protection by creating an invisible infrared safety barrier. These systems are widely used in manufacturing plants to protect operators from hazardous machinery while maintaining production efficiency.",
+  "features": [
+    "Type 4 safety compliance",
+    "High-resolution detection",
+    "Fast response time",
+    "Easy integration with control systems",
+    "Compact and modular design",
+    "Reliable operator protection"
+  ],
+  "models": {
+    "menu_drop5_1": {
+      "name": "Type 4 Safety Curtain",
+      "description": "Type 4 safety light curtains provide the highest level of protection according to international safety standards. They are ideal for hazardous machinery where maximum operator safety is required.",
+      "image": "/images/type4.png",
+      "badge": "MAX SAFETY",
+      "specs": [
+        "Complies with Type 4 safety standards",
+        "High-speed response",
+        "Self-diagnostic functionality",
+        "Robust industrial housing"
+      ]
+    },
+    "menu_drop5_2": {
+      "name": "Safety Curtains 200 – 1200 mm",
+      "description": "Available in protection heights ranging from 200 mm to 1200 mm, these safety curtains offer flexible protection coverage for different industrial machine sizes and applications.",
+      "image": "/images/safety_range.png",
+      "badge": "FLEXIBLE RANGE",
+      "specs": [
+        "Protection height 200–1200 mm",
+        "Multiple beam configurations",
+        "Easy installation",
+        "Reliable industrial performance"
+      ]
+    }
+  }
+},
+"main_menu6": {
+  "title": "OMRON TIMER SOLUTIONS",
+  "description": "Omron industrial timers provide accurate and reliable time control for automation systems, machinery, and control panels. Designed for durability and precision, these timers ensure consistent performance in industrial environments.",
+  "features": [
+    "High timing accuracy",
+    "Wide time range selection",
+    "Compact panel mounting design",
+    "Long operational life",
+    "Reliable switching performance"
+  ],
+  "models": {
+    "menu_drop6_1": {
+      "name": "AT8N Timer",
+      "description": "The AT8N is a versatile industrial timer designed for automation panels and machine control applications. It offers stable timing functions with easy configuration and durable construction.",
+      "image": "/images/at8n.png",
+      "badge": "TIME CONTROL",
+      "specs": [
+        "Multi-range timing options",
+        "Compact DIN panel design",
+        "Reliable relay output",
+        "Clear timing indication"
+      ]
+    }
+  }
+},
+
+"main_menu7": {
+  "title": "OMRON COUNTER SOLUTIONS",
+  "description": "Omron digital counters are designed for accurate counting operations in industrial automation systems. They provide reliable performance for production lines, packaging systems, and material handling applications.",
+  "features": [
+    "High counting accuracy",
+    "Clear digital display",
+    "Compact panel mounting",
+    "Long operational life",
+    "Reliable industrial design"
+  ],
+  "models": {
+    "menu_drop7_1": {
+      "name": "H7EC Counter",
+      "description": "The H7EC is a compact and reliable electronic counter ideal for production monitoring and batch counting applications in industrial environments.",
+      "image": "/images/h7ec.png",
+      "badge": "DIGITAL COUNTING",
+      "specs": [
+        "High visibility LCD display",
+        "Long battery life",
+        "Compact DIN size",
+        "Reliable pulse counting"
+      ]
+    }
+  }
+},
+
+"main_menu8": {
+  "title": "OMRON TEMPERATURE CONTROLLERS",
+  "description": "Omron temperature controllers deliver precise thermal regulation for industrial heating and cooling applications. Designed for accuracy and durability, they ensure stable temperature control in demanding environments.",
+  "features": [
+    "Precise temperature regulation",
+    "PID control functionality",
+    "Clear digital display",
+    "Compact panel mounting",
+    "Reliable long-term operation"
+  ],
+  "models": {
+    "menu_drop8_1": {
+      "name": "E5CC Temperature Controller",
+      "description": "The E5CC provides advanced PID temperature control with high accuracy and user-friendly interface. Ideal for industrial ovens, heaters, and process control systems.",
+      "image": "/images/e5cc.png",
+      "badge": "PRECISION CONTROL",
+      "specs": [
+        "Advanced PID control",
+        "High-resolution display",
+        "Fast response time",
+        "Compact panel size"
+      ]
+    },
+    "menu_drop8_2": {
+      "name": "E5CW Temperature Controller",
+      "description": "The E5CW is a reliable temperature controller designed for stable and efficient thermal management in industrial machinery.",
+      "image": "/images/e5cw.png",
+      "badge": "STABLE PERFORMANCE",
+      "specs": [
+        "Accurate temperature sensing",
+        "Easy configuration",
+        "Industrial-grade durability",
+        "Long service life"
+      ]
+    }
+  }
+},
+
+"main_menu9": {
+  "title": "OMRON SMPS SOLUTIONS",
+  "description": "Omron Switch Mode Power Supplies (SMPS) provide stable and efficient power delivery for industrial automation systems. Designed for reliability and compact installation, they ensure consistent voltage output in demanding environments.",
+  "features": [
+    "High efficiency power conversion",
+    "Compact DIN rail mounting",
+    "Stable voltage output",
+    "Overload and short-circuit protection",
+    "Long operational life"
+  ],
+  "models": {
+    "menu_drop9_1": {
+      "name": "S8VS SMPS",
+      "description": "The S8VS series offers reliable and efficient DC power supply solutions for industrial control panels and automation systems.",
+      "image": "/images/s8vs.png",
+      "badge": "POWER SUPPLY",
+      "specs": [
+        "High efficiency design",
+        "DIN rail mounting",
+        "Over-voltage protection",
+        "Compact industrial housing"
+      ]
+    }
+  }
+},
+
+"main_menu10": {
+  "title": "OMRON ENCODER SOLUTIONS",
+  "description": "Omron rotary encoders provide precise position and speed feedback for motion control applications. Designed for reliability and accuracy, they are widely used in automation, robotics, and conveyor systems.",
+  "features": [
+    "High resolution output",
+    "Stable signal transmission",
+    "Compact mechanical design",
+    "Reliable industrial performance",
+    "Long mechanical life"
+  ],
+  "models": {
+    "menu_drop10_1": {
+      "name": "E6B2 Encoder",
+      "description": "The E6B2 is a compact rotary encoder designed for accurate position and speed feedback in automation systems.",
+      "image": "/images/e6b2.png",
+      "badge": "MOTION FEEDBACK",
+      "specs": [
+        "High resolution pulses",
+        "Compact shaft design",
+        "Stable output signal",
+        "Durable construction"
+      ]
+    },
+    "menu_drop10_2": {
+      "name": "E6C2 Encoder",
+      "description": "The E6C2 provides reliable rotary position detection for industrial motion control and automation applications.",
+      "image": "/images/e6c2.png",
+      "badge": "POSITION CONTROL",
+      "specs": [
+        "Reliable pulse output",
+        "Robust housing",
+        "Easy installation",
+        "Long service life"
+      ]
+    }
+  }
+}
+
+
+
+}
