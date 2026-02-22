@@ -1,248 +1,729 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/final-logo.png">
 
-/* ================= GLOBAL DATA ================= */
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-let productData = {};
-let currentBrand = "";
+  <title>Accurate Control & Automation.</title>
+</head>
 
+<body>
+  <!-- Header section================================== -->
+  <div id="header"></div>
 
-/* ================= LOAD BRAND DATA ================= */
+  <!-- hero section=========================================== -->
+  <section class="hero">
 
-async function loadBrandData(brandName) {
+    <div class="slide active" style="background-image:url('/images/banner1.jpg');"></div>
+    <div class="slide" style="background-image:url('/images/banner2.webp');"></div>
+    <div class="slide" style="background-image:url('/images/manufacturing.jpg');"></div>
 
-    currentBrand = brandName;
+    <div class="hero-content">
+      <h1>Precision in Automation, Powering Industrial Excellence</h1>
+      <p>Delivering reliable automation components and future-ready control solutions with 27+ years of technical
+        expertise and trusted service.</p>
+      <a href="#" class="btn">Explore Our Services</a>
+    </div>
 
-    try {
-        const response = await fetch(`products/${brandName}.json`);
-        productData = await response.json();
+    <div class="side-nav">
+      <ul>
+        <li class="active"><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+      </ul>
+    </div>
 
-        // Open first available category by default
-        const firstCategory = Object.keys(productData)[0];
-        renderAllModels(firstCategory);
+  </section>
 
-    } catch (error) {
-        document.getElementById('contentArea').innerHTML =
-            "<div class='alert alert-danger'>Unable to load product data</div>";
-    }
-}
+  <!-- about section================================= -->
+  <section class="about-section py-5 ">
+    <div class="container pb-4">
+      <div class="row  g-5">
 
+        <!-- LEFT SIDE IMAGES -->
+        <div class="col-lg-6 col-md-6 col-sm-12 position-relative ">
 
-/* ================= SIDEBAR TAB ================= */
+          <img src="/images/cement.png" class="img-fluid rounded shadow main-img" alt="">
 
-function setActiveTab(element, category) {
+          <!-- Small Overlapping Image -->
+          <div class="small-img-wrapper">
+            <img src="/images/plc.webp" class="img-fluid rounded shadow" alt="">
 
-    document.querySelectorAll('.list-group-item').forEach(item => {
-        item.classList.remove('active');
-    });
-
-    element.classList.add('active');
-
-    document.querySelectorAll('.submenu').forEach(menu => {
-        menu.classList.remove('show');
-    });
-
-    const target = element.getAttribute('data-bs-target');
-    if (target) document.querySelector(target).classList.add('show');
-
-    renderAllModels(category);
-}
-
-
-/* ================= SHOW SINGLE PRODUCT ================= */
-
-function showProduct(category, productKey, element) {
-
-    const submenu = element.closest('.submenu');
-    submenu.querySelectorAll('.submenu-item').forEach(item => {
-        item.classList.remove('active');
-    });
-
-    element.classList.add('active');
-
-    renderSingleProduct(category, productKey);
-}
-
-
-/* ================= RENDER ALL MODELS ================= */
-
-function renderAllModels(category) {
-
-    const data = productData[category];
-
-    if (!data) {
-        document.getElementById('contentArea').innerHTML =
-            '<div class="alert alert-warning">Category not found</div>';
-        return;
-    }
-
-    const modelsHTML = Object.entries(data.models).map(([key, model]) => `
-        <div class="col-lg-6 col-md-6 mb-4">
-            <div class="model-card" onclick="showProductFromCard('${category}', '${key}')">
-                <div class="model-image model-imagess">
-                    <img src="${model.image}" alt="${model.name}"
-                    onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%23e8ecf1%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22%235a6376%22%3E${model.name}%3C/text%3E%3C/svg%3E'">
-                </div>
-                <div class="model-info">
-                    <div class="model-name">${model.name}</div>
-                    <div class="model-description">${model.description}</div>
-                    <span class="model-badge">${model.badge}</span>
-                </div>
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
             </div>
-        </div>
-    `).join('');
+          </div>
 
-    const html = `
-        <h2 class="product-title">${data.title}</h2>
-
-        <div class="description-box">
-            <p>${data.description}</p>
         </div>
 
-        <h4 class="mt-4 mb-3" style="font-family: 'Rajdhani', sans-serif; color: var(--siemens-dark); font-weight: 600;">
-            <i class="bi bi-grid-3x3-gap me-2"></i>Available Models
-        </h4>
+        <!-- RIGHT SIDE CONTENT -->
+        <div class="col-lg-6 col-md-6 col-sm-12">
 
-        <div class="row">
-            ${modelsHTML}
-        </div>
+          <p class="text-danger fw-semibold text-uppercase small mb-2">
+            <img src="/images/elements5.webp"> About Our Company <img src="/images/elements5.webp">
+          </p>
 
-        <div class="features-box">
-            <h3>Category Features & Advantages</h3>
-            <ul class="feature-list">
-                ${data.features.map(feature => `<li>${feature}</li>`).join('')}
-            </ul>
-        </div>
-    `;
+          <h2 class="fw-bold mb-4">
+            Innovative Automation Solutions for Modern Industries
+          </h2>
 
-    document.getElementById('contentArea').innerHTML = html;
-}
+          <p class="text-muted mb-4">
+            M/s Accurate Control & Automation was founded in Nov 2012 with a vision of making Automation
+            familier in Indian Industry. Founder Mr Suresh Chand & Mr. Manoranjan Prasad having very vast
+            Technical & Marketing experience of 27 Year in Automation industry.We are Committed to provide
+            the Best suited Automation Componenets with accurate & prompt service for required application.
+            We not only fulfill the customer requirement, but also suggest & guide the customer toward best
+            & Futureproof solution.
+          </p>
 
-
-/* ================= RENDER SINGLE PRODUCT ================= */
-
-function renderSingleProduct(category, productKey) {
-
-    const data = productData[category];
-    const model = data.models[productKey];
-
-    if (!model) {
-        document.getElementById('contentArea').innerHTML =
-            '<div class="alert alert-warning">Product not found</div>';
-        return;
-    }
-
-    const html = `
-        <h2 class="product-title">${data.title}</h2>
-
-        <div class="description-box">
-            <p>${data.description}</p>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 mb-4">
-                <div class="model-card">
-                    <div class="model-image">
-                        <img src="${model.image}" alt="${model.name}"
-                        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%23e8ecf1%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22%235a6376%22%3E${model.name}%3C/text%3E%3C/svg%3E'">
-                    </div>
-                    <div class="model-info">
-                        <div class="model-name">${model.name}</div>
-                        <div class="model-description">${model.description}</div>
-                        <span class="model-badge">${model.badge}</span>
-                    </div>
-                </div>
+          <!-- FEATURES -->
+          <div class="row mb-4">
+            <div class="col-lg-6 col-md-12 d-flex mb-3">
+              <div class="feature-icon me-3">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold">Innovating Energy</h6>
+                <p class="text-muted small mb-0">
+                  Efficient and reliable automation systems.
+                </p>
+              </div>
             </div>
+
+            <div class="col-lg-6 col-md-12 d-flex mb-3">
+              <div class="feature-icon me-3">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold">Powerful Solutions</h6>
+                <p class="text-muted small mb-0">
+                  Future-ready industrial control systems.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA SECTION -->
+          <div class="d-flex align-items-center flex-wrap gap-4">
+
+            <a href="#" class="btn btn-primary px-4 py-2 fw-semibold">
+              Learn More <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+            </a>
+
+            <div class="d-flex align-items-center">
+              <div class="call-icon me-3">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <small class="text-muted d-block">GIVE US A CALL</small>
+                <strong>123-456-7890</strong>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- service area============================================= -->
+  <section class="services-section py-5">
+    <img src="/images/animetion_icon.webp" alt="elements" class="sertoleft">
+    <img src="/images/elements9.webp" alt="elements" class="serboright">
+    <div class="container">
+
+      <!-- Section Title -->
+      <div class="text-center">
+        <p class="text-danger fw-semibold text-uppercase small ">
+          <img src="/images/elements5.webp"> Our Products <img src="/images/elements5.webp">
+        </p>
+        <h2 class="fw-bold ">Authorized Industrial Automation Products from Leading Brands</h2>
+      </div>
+
+      <div class="swiper productSwiper py-3">
+        <div class="swiper-wrapper mt-5">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="service-card">
+              <div class="service-img">
+                <img src="/images/ss.webp" class="img-fluid" alt="">
+              </div>
+              <div class="service-content">
+                <div class="icon-box">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h5 class="fw-bold mt-4">Siemens Industrial Automation Solutions</h5>
+                <p>Comprehensive range of Siemens PLCs (S7-200 Smart, S7-1200, S7-1500, ET200SP), HMIs, AC Drives, Servo
+                  systems, SCADA, programming software, SITOP SMPS and industrial Ethernet switches for advanced
+                  automation and control applications.</p>
+                <a href="#" class="learn-more">
+                  Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="service-card">
+              <div class="service-img">
+                <img src="/images/omron.png" class="img-fluid" alt="">
+              </div>
+              <div class="service-content">
+                <div class="icon-box">
+                  <i class="fa-solid fa-gears"></i>
+                </div>
+                <h5 class="fw-bold mt-4">Omron Sensors & Control Devices</h5>
+                <p>High-performance Omron proximity sensors, photo sensors, relays, PLCs, HMIs, safety curtains, timers,
+                  counters, temperature controllers, encoders and SMPS for reliable and precise industrial automation
+                  systems.</p>
+                <a href="#" class="learn-more">
+                  Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="service-card">
+              <div class="service-img">
+                <img src="/images/power.webp" class="img-fluid" alt="">
+              </div>
+              <div class="service-content">
+                <div class="icon-box">
+                  <i class="fa-solid fa-industry"></i>
+                </div>
+                <h5 class="fw-bold mt-4">Meanwell Industrial Power Supplies</h5>
+                <p>Reliable Meanwell SMPS solutions including LRS, NDR and MDR series power supplies available in 5V and
+                  12V options, ensuring stable and efficient power for industrial control panels.</p>
+                <a href="#" class="learn-more">
+                  Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="service-card">
+              <div class="service-img">
+                <img src="/images/relay.png" class="img-fluid" alt="">
+              </div>
+              <div class="service-content">
+                <div class="icon-box">
+                  <i class="fa-solid fa-industry"></i>
+                </div>
+                <h5 class="fw-bold mt-4">UL Certified Relay & Redundancy Modules</h5>
+                <p>UL approved relay boards and redundancy modules with 8-channel and 16-channel configurations designed
+                  for safe, secure and dependable industrial control applications.</p>
+                <a href="#" class="learn-more">
+                  Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <div class="service-card">
+              <div class="service-img">
+                <img src="/images/relayphoneix.webp" class="img-fluid" alt="">
+              </div>
+              <div class="service-content">
+                <div class="icon-box">
+                  <i class="fa-solid fa-industry"></i>
+                </div>
+                <h5 class="fw-bold mt-4">Phoenix Industrial Networking & Relay Systems</h5>
+                <p>Advanced Ethernet switches (5, 8 & 16 port), slim relays and relay boards from Phoenix Contact
+                  delivering robust communication and control solutions for modern industrial automation.</p>
+                <a href="#" class="learn-more">
+                  Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Add More Slides (4 & 5 same structure) -->
+
         </div>
 
-        ${model.specs ? `
-        <div class="features-box">
-            <h3><i class="bi bi-cpu me-2"></i>Technical Specifications</h3>
-            <ul class="feature-list">
-                ${model.specs.map(spec => `<li>${spec}</li>`).join('')}
-            </ul>
-        </div>` : ''}
+        <!-- Pagination -->
+        <div class="swiper-pagination mt-4"></div>
 
-        <div class="features-box">
-            <h3><i class="bi bi-star me-2"></i>Key Features & Benefits</h3>
-            <ul class="feature-list">
-                ${data.features.map(feature => `<li>${feature}</li>`).join('')}
-            </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- why choose us========================================== -->
+
+  <section class="why-section py-5">
+    <div class="container">
+      <div class="row  pt-5 g-5">
+
+        <!-- LEFT CONTENT -->
+        <div class="col-lg-6 " data-aos="fade-right">
+
+          <img src="/images/elements5.webp"> Why Choose Us <img src="/images/elements5.webp">
+
+          <h2 class="fw-bold mb-4">
+            Powering Industries with Precision, Expertise & Trusted Automation Solutions
+          </h2>
+
+          <p class="text-muted mb-4">
+            With over 27+ years of technical and marketing experience in the automation industry, we deliver reliable,
+            future-ready industrial solutions. From PLCs and HMIs to Drives, Sensors and Control Systems, we provide
+            only trusted global brands backed by expert technical support.
+          </p>
+
+          <!-- Feature 1 -->
+          <div class="d-flex mb-4" data-aos="fade-up">
+            <div class="feature-icon me-3">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold">Committed to Long-Term Industrial Success</h5>
+              <p class="text-muted mb-0">
+                We believe in collective growth with our vendors and customers by building strong, transparent, and
+                dependable business relationships.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="d-flex mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon me-3">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold">Trusted Products from Leading Brands</h5>
+              <p class="text-muted mb-0">
+                We supply Siemens, Omron, Phoenix Contact, Meanwell and other globally recognized automation brands
+                ensuring reliability and long-term performance.
+              </p>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-primary px-4 py-2 mt-3">
+            Learn More <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+          </a>
+
         </div>
 
-        <div class="alert alert-info mt-4">
-            <strong>Need more information?</strong> Contact our technical team for ${model.name}.
+        <!-- RIGHT IMAGES -->
+        <div class="col-lg-6 col-md-6 col-sm-12 position-relative" data-aos="fade-left">
+
+          <img src="/images/netw.png" class="img-fluid  main-img shadow" alt="">
+
+          <img src="/images/ss.webp" class="img-fluid  shadow small-img" alt="">
+
         </div>
-    `;
 
-    document.getElementById('contentArea').innerHTML = html;
-}
+      </div>
+    </div>
+  </section>
+  <!-- our projects===================================== -->
+  <section class="project-section">
+    <p class="text-uppercase small text-danger mb-2 text-center">
+      <img src="/images/elements5.webp"> Our Projects <img src="/images/elements5.webp">
+    </p>
+
+    <h2 class="text-dark text-center fw-bold mb-5">
+      Delivering Smart Automation & Industrial Excellence
+    </h2>
+    <div class="project-container  mb-5">
+
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <div class="project-number">01.</div>
+        <h3 class="project-title">Industrial Hardening & Tempering Furnace Automation</h3>
+        <p class="project-text">
+          Complete automation of Normalising, Solutioning and Hardening-Tempering processes with advanced Recipe
+          Management, Tray Data Logging in SQL Database, and Daily Production Reporting in Excel for Embros Baddi and
+          GNA Axel Phagwara.
+        </p>
+        <div class="project-image">
+          <img src="/images/TEMPRAMATIC2.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <div class="project-number">02.</div>
+        <h3 class="project-title">Seal Quench Furnace Batch Automation System</h3>
+        <p class="project-text">
+          Designed and implemented Seal Quench Furnace control system with accurate batch monitoring, temperature
+          control, and automated production reporting integrated with SQL and Excel platforms at NAW Baghaula.
+        </p>
+        <div class="project-image">
+          <img src="/images/seal.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <div class="project-number">03.</div>
+        <h3 class="project-title">Boggie Furnace Temperature Programming & Batch Reporting</h3>
+        <p class="project-text">
+          Advanced temperature step programming with recipe control and complete batch reporting system in SQL/Excel for
+          Paramount Bhiwadi, ensuring process precision and production traceability.
+        </p>
+        <div class="project-image">
+          <img src="/images/bogi.jpeg" alt="">
+        </div>
+      </div>
+
+    </div>
+    <button class="btn btn-primary px-4 py-2 d-block mx-auto">
+      View All Projects <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+  </section>
+  <!-- Testimonial============================================= -->
+  <section class="testimonial-section py-5">
+    <div class="container text-center py-5">
+
+      <p class="text-uppercase small text-light mb-2">
+        <img src="/images/elements5.webp"> Testimonials <img src="/images/elements5.webp">
+      </p>
+
+      <h2 class="text-white fw-bold mb-5">
+        What Our Customers Say
+      </h2>
+
+      <div class="swiper testimonialSwiper">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card text-start">
+              <div class="stars mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p>
+                "Accurate Control & Automation provided reliable PLC and drive
+                solutions. Their technical support is exceptional and always
+                available when required."
+              </p>
+
+              <div class="d-flex align-items-center mt-4">
+                <div class="position-relative me-3">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" class="profile-img" alt="">
+                  <span class="quote-icon">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </span>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-0">Rajesh Kumar</h6>
+                  <small class="text-muted">Operations Head</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card text-start">
+              <div class="stars mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p>
+                "We trust Accurate Automation for Siemens and Omron products.
+                Their team ensures smooth implementation and long-term reliability."
+              </p>
+
+              <div class="d-flex align-items-center mt-4">
+                <div class="position-relative me-3">
+                  <img src="https://randomuser.me/api/portraits/men/44.jpg" class="profile-img" alt="">
+                  <span class="quote-icon">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </span>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-0">Amit Sharma</h6>
+                  <small class="text-muted">Plant Manager</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card text-start">
+              <div class="stars mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p>
+                "We trust Accurate Automation for Siemens and Omron products.
+                Their team ensures smooth implementation and long-term reliability."
+              </p>
+
+              <div class="d-flex align-items-center mt-4">
+                <div class="position-relative me-3">
+                  <img src="https://randomuser.me/api/portraits/men/44.jpg" class="profile-img" alt="">
+                  <span class="quote-icon">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </span>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-0">Amit Sharma</h6>
+                  <small class="text-muted">Plant Manager</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card text-start">
+              <div class="stars mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p>
+                "We trust Accurate Automation for Siemens and Omron products.
+                Their team ensures smooth implementation and long-term reliability."
+              </p>
+
+              <div class="d-flex align-items-center mt-4">
+                <div class="position-relative me-3">
+                  <img src="https://randomuser.me/api/portraits/men/44.jpg" class="profile-img" alt="">
+                  <span class="quote-icon">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </span>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-0">Amit Sharma</h6>
+                  <small class="text-muted">Plant Manager</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Add more slides if needed -->
+
+        </div>
+
+        <div class="swiper-pagination mt-4"></div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- clients============================================== -->
+  <section class="client-section py-5">
+    <div class="container text-center">
+
+      <p class="text-danger fw-semibold text-uppercase small mb-2">
+        <img src="/images/elements5.webp"> Our Clients <img src="/images/elements5.webp">
+      </p>
+
+      <h2 class="fw-bold mb-5">
+        Trusted by Leading Brands
+      </h2>
+
+      <div class="swiper clientSwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="images/Siemens_logo-6.jpg" class="client-logo" alt="Siemens">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/UL.jpg" class="client-logo" alt="UL">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/UL (1).jpg" class="client-logo" alt="UL">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/Siemens.webp" class="client-logo" alt="Siemens">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/plc.webp" class="client-logo" alt="Client">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- footer============================================ -->
+  <div id="footer"></div>
 
 
-/* ================= CARD CLICK ================= */
 
-function showProductFromCard(category, productKey) {
 
-    const submenu = document.getElementById(`submenu-${category}`);
 
-    if (submenu) {
-        submenu.querySelectorAll('.submenu-item').forEach(item => {
-            const onclick = item.getAttribute('onclick');
-            item.classList.toggle('active', onclick && onclick.includes(`'${productKey}'`));
-        });
+
+
+
+
+
+
+
+
+
+
+
+  <!-- banner=========================================== -->
+  <script>
+
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".side-nav ul li");
+
+    let index = 0;
+    let total = slides.length;
+    let interval;
+
+    /* SHOW SLIDE */
+    function showSlide(i) {
+
+      index = i;
+
+      slides.forEach(s => s.classList.remove("active"));
+      dots.forEach(d => d.classList.remove("active"));
+
+      slides[index].classList.add("active");
+      dots[index].classList.add("active");
     }
 
-    renderSingleProduct(category, productKey);
-}
+    /* AUTO SLIDE */
+    function startAutoSlide() {
+      interval = setInterval(() => {
+        index++;
+        if (index >= total) { index = 0; }
+        showSlide(index);
+      }, 5000);
+    }
 
+    /* DOT CLICK */
+    dots.forEach((dot, i) => {
+      dot.addEventListener("click", () => {
+        clearInterval(interval);
+        showSlide(i);
+        startAutoSlide();
+      });
+    });
 
-/* ================= AUTO LOAD BRAND ================= */
+    startAutoSlide();
 
-document.addEventListener('DOMContentLoaded', function () {
+  </script>
 
-    const pageName = window.location.pathname
-        .split('/')
-        .pop()
-        .replace('.html', '');
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".productSwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1
+        },
+        768: {
+          slidesPerView: 2
+        },
+        992: {
+          slidesPerView: 3
+        }
+      }
+    });
+  </script>
 
-    loadBrandData(pageName);
-});
+  <!-- why choose us================================ -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  <!-- ================testimoial=================================== -->
+  <script>
+    var swiper = new Swiper(".testimonialSwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1
+        },
+        992: {
+          slidesPerView: 2
+        }
+      }
+    });
+  </script>
+  <!-- client========================== -->
+  <script>
+    var swiper = new Swiper(".clientSwiper", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: { slidesPerView: 2 },
+        576: { slidesPerView: 3 },
+        768: { slidesPerView: 4 },
+        992: { slidesPerView: 5 }
+      }
+    });
+  </script>
+  <script src="./index.js"></script>
+</body>
 
-
-// side bar menu
-
-function loadPart(id, file) {
-    fetch(file)
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById(id).innerHTML = data;
-      })
-      .then(initSidebar); // important
-  }
-  
-  function initSidebar() {
-  
-    const menuToggle = document.getElementById("menuToggle");
-    const sidePanel = document.getElementById("sidePanel");
-    const menuClose = document.getElementById("menuClose");
-    const menuOverlay = document.getElementById("menuOverlay");
-  
-    if (!menuToggle) return;
-  
-    menuToggle.onclick = () => {
-      sidePanel.classList.add("active");
-      menuOverlay.classList.add("active");
-    };
-  
-    menuClose.onclick = () => {
-      sidePanel.classList.remove("active");
-      menuOverlay.classList.remove("active");
-    };
-  
-    menuOverlay.onclick = () => {
-      sidePanel.classList.remove("active");
-      menuOverlay.classList.remove("active");
-    };
-  }
-  
-  loadPart("header", "./Header.html");
-  loadPart("footer", "./footer.html");
-  
+</html>
